@@ -288,3 +288,26 @@ ERROR - 2012-05-24 19:34:35 --> Severity: Notice  --> Undefined index: oauth_tok
 ERROR - 2012-05-24 19:34:35 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
 DEBUG - 2012-05-24 19:34:35 --> Final output sent to browser
 DEBUG - 2012-05-24 19:34:35 --> Total execution time: 0.6607
+DEBUG - 2012-05-24 21:07:25 --> Config Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Hooks Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Utf8 Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> UTF-8 Support Enabled
+DEBUG - 2012-05-24 21:07:25 --> URI Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Router Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Output Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Security Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Input Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-24 21:07:25 --> Language Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Loader Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Helper loaded: url_helper
+DEBUG - 2012-05-24 21:07:25 --> Session Class Initialized
+DEBUG - 2012-05-24 21:07:25 --> Helper loaded: string_helper
+DEBUG - 2012-05-24 21:07:25 --> Session routines successfully run
+DEBUG - 2012-05-24 21:07:25 --> Controller Class Initialized
+ERROR - 2012-05-24 21:07:25 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/oauth.php 383
+ERROR - 2012-05-24 21:07:25 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/oauth.php 383
+ERROR - 2012-05-24 21:07:26 --> Severity: Notice  --> Undefined index: oauth_token /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
+ERROR - 2012-05-24 21:07:26 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
+DEBUG - 2012-05-24 21:07:26 --> Final output sent to browser
+DEBUG - 2012-05-24 21:07:26 --> Total execution time: 0.7140
