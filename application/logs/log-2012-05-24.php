@@ -311,3 +311,72 @@ ERROR - 2012-05-24 21:07:26 --> Severity: Notice  --> Undefined index: oauth_tok
 ERROR - 2012-05-24 21:07:26 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
 DEBUG - 2012-05-24 21:07:26 --> Final output sent to browser
 DEBUG - 2012-05-24 21:07:26 --> Total execution time: 0.7140
+DEBUG - 2012-05-24 21:09:00 --> Config Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Hooks Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Utf8 Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> UTF-8 Support Enabled
+DEBUG - 2012-05-24 21:09:00 --> URI Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Router Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Output Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Security Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Input Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-24 21:09:00 --> Language Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Loader Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Helper loaded: url_helper
+DEBUG - 2012-05-24 21:09:00 --> Session Class Initialized
+DEBUG - 2012-05-24 21:09:00 --> Helper loaded: string_helper
+DEBUG - 2012-05-24 21:09:00 --> Session routines successfully run
+DEBUG - 2012-05-24 21:09:00 --> Controller Class Initialized
+ERROR - 2012-05-24 21:09:00 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/oauth.php 383
+ERROR - 2012-05-24 21:09:00 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/oauth.php 383
+ERROR - 2012-05-24 21:09:01 --> Severity: Notice  --> Undefined index: oauth_token /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
+ERROR - 2012-05-24 21:09:01 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
+DEBUG - 2012-05-24 21:09:01 --> Final output sent to browser
+DEBUG - 2012-05-24 21:09:01 --> Total execution time: 0.6587
+DEBUG - 2012-05-24 21:09:02 --> Config Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Hooks Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Utf8 Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> UTF-8 Support Enabled
+DEBUG - 2012-05-24 21:09:02 --> URI Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Router Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Output Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Security Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Input Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-24 21:09:02 --> Language Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Loader Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Helper loaded: url_helper
+DEBUG - 2012-05-24 21:09:02 --> Session Class Initialized
+DEBUG - 2012-05-24 21:09:02 --> Helper loaded: string_helper
+DEBUG - 2012-05-24 21:09:02 --> Session routines successfully run
+DEBUG - 2012-05-24 21:09:02 --> Controller Class Initialized
+ERROR - 2012-05-24 21:09:02 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/oauth.php 383
+ERROR - 2012-05-24 21:09:02 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/oauth.php 383
+ERROR - 2012-05-24 21:09:02 --> Severity: Notice  --> Undefined index: oauth_token /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
+ERROR - 2012-05-24 21:09:02 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
+DEBUG - 2012-05-24 21:09:02 --> Final output sent to browser
+DEBUG - 2012-05-24 21:09:02 --> Total execution time: 0.6525
+DEBUG - 2012-05-24 21:09:05 --> Config Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Hooks Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Utf8 Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> UTF-8 Support Enabled
+DEBUG - 2012-05-24 21:09:05 --> URI Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Router Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Output Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Security Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Input Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-24 21:09:05 --> Language Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Loader Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Helper loaded: url_helper
+DEBUG - 2012-05-24 21:09:05 --> Session Class Initialized
+DEBUG - 2012-05-24 21:09:05 --> Helper loaded: string_helper
+DEBUG - 2012-05-24 21:09:05 --> Session routines successfully run
+DEBUG - 2012-05-24 21:09:05 --> Controller Class Initialized
+ERROR - 2012-05-24 21:09:05 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/oauth.php 383
+ERROR - 2012-05-24 21:09:05 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/oauth.php 383
+ERROR - 2012-05-24 21:09:06 --> Severity: Notice  --> Undefined index: oauth_token /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
+ERROR - 2012-05-24 21:09:06 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/twitteroauth.php 82
+DEBUG - 2012-05-24 21:09:06 --> Final output sent to browser
+DEBUG - 2012-05-24 21:09:06 --> Total execution time: 0.6414
