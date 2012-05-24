@@ -13,6 +13,8 @@ class Twitter extends CI_Controller {
 		require_once(APPPATH . 'libraries/twitteroauth.php');
 		
 		$connection = new TwitterOAuth($this->config->item('oauth_consumer_key'), $this->config->item('oauth_consumer_secret'));
+
+		print_r($connection);
 		
 		$temporary_credentials = $connection->getRequestToken($this->config->item('oauth_callback_url'));
 		
@@ -23,6 +25,10 @@ class Twitter extends CI_Controller {
 	public function callback()
 	{
 		
+		print_r($_POST);
+
+		print_r($_GET);
+
 	}
 	
 }

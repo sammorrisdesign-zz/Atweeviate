@@ -1,11 +1,9 @@
-/* Author:
-
-*/
+/* Author: Saul Hardman (@saulhardman) */
 
 
 /* Spell Check Jank */
 
-var shown = 0
+var shown = 0;
 
 $("#tweet").keydown(function(e){
     if(e.which === 32) {
@@ -24,4 +22,4 @@ $("#tweet").keydown(function(e){
 	
 	$("tweet").keydown(function() {
     var text = $('#tweet').val();
-    var counter == text.length - 140 } );
+    var counter = text.length - 140; } );
