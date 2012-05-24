@@ -704,3 +704,20 @@ DEBUG - 2012-05-24 21:31:35 --> Session Class Initialized
 DEBUG - 2012-05-24 21:31:35 --> Helper loaded: string_helper
 DEBUG - 2012-05-24 21:31:35 --> Session routines successfully run
 DEBUG - 2012-05-24 21:31:35 --> Controller Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Config Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Hooks Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Utf8 Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> UTF-8 Support Enabled
+DEBUG - 2012-05-24 21:32:34 --> URI Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Router Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Output Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Security Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Input Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-24 21:32:34 --> Language Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Loader Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Helper loaded: url_helper
+DEBUG - 2012-05-24 21:32:34 --> Session Class Initialized
+DEBUG - 2012-05-24 21:32:34 --> Helper loaded: string_helper
+DEBUG - 2012-05-24 21:32:34 --> Session routines successfully run
+DEBUG - 2012-05-24 21:32:34 --> Controller Class Initialized

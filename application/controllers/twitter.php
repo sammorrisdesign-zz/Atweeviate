@@ -10,8 +10,6 @@ class Twitter extends CI_Controller {
 	public function signin()
 	{
 
-		echo 'signing in!';
-
 		$credentials = array(
 
       'consumer_key' => $this->config->item('oauth_consumer_key'),
@@ -19,15 +17,9 @@ class Twitter extends CI_Controller {
 
     );
 
-    print_r($credentials);
-
 		$this->load->library('twitter', $credentials);
 
-		print_r($req);
-
     if (is_object($req = $this->twitter->authenticate())) {
-
-			print_r($req);
 
     }
 		
