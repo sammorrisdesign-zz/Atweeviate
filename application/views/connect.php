@@ -6,7 +6,7 @@
 	
 	<div id="main" role="main">
 	
-		<a href="<?php echo base_url(); ?>twitter/redirect" class="connect">Connect to Twitter</a>
+		<a href="<?php echo base_url(); ?>twitter/signin" class="connect">Connect to Twitter</a>
 	
 	</div>
 

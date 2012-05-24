@@ -7,18 +7,29 @@ class Twitter extends CI_Controller {
 		$this->load->view('connect');
 	}
 	
-	public function redirect()
+	public function signin()
 	{
-	
-		require_once(APPPATH . 'libraries/twitteroauth.php');
-		
-		$connection = new TwitterOAuth($this->config->item('oauth_consumer_key'), $this->config->item('oauth_consumer_secret'), $this->config->item('oauth_callback_url'));
 
-		print_r($connection);
-		
-		$temporary_credentials = $connection->getRequestToken($this->config->item('oauth_callback_url'));
-		
-		print_r($temporary_credentials);
+		echo 'signing in!';
+
+		$credentials = array(
+
+      'consumer_key' => $this->config->item('oauth_consumer_key'),
+      'consumer_secret' => $this->config->item('oauth_consumer_secret')
+
+    );
+
+    print_r($credentials);
+
+		$this->load->library('twitter', $credentials);
+
+		print_r($req);
+
+    if (is_object($req = $this->twitter->authenticate())) {
+
+			print_r($req);
+
+    }
 		
 	}
 	
