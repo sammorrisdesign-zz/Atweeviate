@@ -1602,3 +1602,69 @@ ERROR - 2012-05-25 01:28:12 --> Severity: Notice  --> Undefined index: port /Use
 ERROR - 2012-05-25 01:28:12 --> Severity: Notice  --> Undefined index: oauth_token /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/Twitteroauth.php 121
 ERROR - 2012-05-25 01:28:12 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/Twitteroauth.php 121
 ERROR - 2012-05-25 01:28:12 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/saulhardman/Documents/Websites/Atweeviate/system/core/Exceptions.php:185) /Users/saulhardman/Documents/Websites/Atweeviate/system/helpers/url_helper.php 546
+DEBUG - 2012-05-25 01:30:39 --> Config Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Hooks Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Utf8 Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> UTF-8 Support Enabled
+DEBUG - 2012-05-25 01:30:39 --> URI Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Router Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Output Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Security Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Input Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-25 01:30:39 --> Language Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Loader Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Helper loaded: url_helper
+DEBUG - 2012-05-25 01:30:39 --> Session Class Initialized
+DEBUG - 2012-05-25 01:30:39 --> Helper loaded: string_helper
+DEBUG - 2012-05-25 01:30:39 --> Session routines successfully run
+DEBUG - 2012-05-25 01:30:39 --> Controller Class Initialized
+ERROR - 2012-05-25 01:30:39 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/OAuth.php 383
+ERROR - 2012-05-25 01:30:39 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/OAuth.php 383
+ERROR - 2012-05-25 01:30:39 --> Severity: Notice  --> Undefined index: oauth_token /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/Twitteroauth.php 123
+ERROR - 2012-05-25 01:30:39 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/Twitteroauth.php 123
+ERROR - 2012-05-25 01:30:39 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/Twitteroauth.php:12) /Users/saulhardman/Documents/Websites/Atweeviate/system/helpers/url_helper.php 546
+DEBUG - 2012-05-25 01:30:48 --> Config Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Hooks Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Utf8 Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> UTF-8 Support Enabled
+DEBUG - 2012-05-25 01:30:48 --> URI Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Router Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Output Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Security Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Input Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-25 01:30:48 --> Language Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Loader Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Helper loaded: url_helper
+DEBUG - 2012-05-25 01:30:48 --> Session Class Initialized
+DEBUG - 2012-05-25 01:30:48 --> Helper loaded: string_helper
+DEBUG - 2012-05-25 01:30:48 --> Session routines successfully run
+DEBUG - 2012-05-25 01:30:48 --> Controller Class Initialized
+ERROR - 2012-05-25 01:30:48 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/OAuth.php 383
+ERROR - 2012-05-25 01:30:48 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/OAuth.php 383
+ERROR - 2012-05-25 01:30:49 --> Severity: Notice  --> Undefined index: oauth_token /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/Twitteroauth.php 123
+ERROR - 2012-05-25 01:30:49 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/Twitteroauth.php 123
+ERROR - 2012-05-25 01:30:49 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/OAuth.php:3) /Users/saulhardman/Documents/Websites/Atweeviate/system/helpers/url_helper.php 546
+DEBUG - 2012-05-25 01:32:20 --> Config Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Hooks Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Utf8 Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> UTF-8 Support Enabled
+DEBUG - 2012-05-25 01:32:20 --> URI Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Router Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Output Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Security Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Input Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-05-25 01:32:20 --> Language Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Loader Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Helper loaded: url_helper
+DEBUG - 2012-05-25 01:32:20 --> Session Class Initialized
+DEBUG - 2012-05-25 01:32:20 --> Helper loaded: string_helper
+DEBUG - 2012-05-25 01:32:20 --> Session routines successfully run
+DEBUG - 2012-05-25 01:32:20 --> Controller Class Initialized
+ERROR - 2012-05-25 01:32:20 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/OAuth.php 383
+ERROR - 2012-05-25 01:32:20 --> Severity: Notice  --> Undefined index: port /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/OAuth.php 383
+ERROR - 2012-05-25 01:32:21 --> Severity: Notice  --> Undefined index: oauth_token /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/Twitteroauth.php 123
+ERROR - 2012-05-25 01:32:21 --> Severity: Notice  --> Undefined index: oauth_token_secret /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/Twitteroauth.php 123
+ERROR - 2012-05-25 01:32:21 --> Severity: Warning  --> Cannot modify header information - headers already sent by (output started at /Users/saulhardman/Documents/Websites/Atweeviate/application/libraries/OAuth.php:3) /Users/saulhardman/Documents/Websites/Atweeviate/system/helpers/url_helper.php 546

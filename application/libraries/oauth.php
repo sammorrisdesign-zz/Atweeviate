@@ -1,6 +1,6 @@
 <?php
 // vim: foldmethod=marker
-
+echo 'hi';
 /* Generic exception class
  */
 class OAuthException extends Exception {
