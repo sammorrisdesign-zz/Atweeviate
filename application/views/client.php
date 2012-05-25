@@ -6,7 +6,7 @@
 	
 	<div id="main" role="main">
 	
-		<form method="POST" action="tweet.php" class="tweetForm">
+		<form method="POST" action="<?php echo base_url('twitter/publish'); ?>" class="tweetForm">
 		
 		  <textarea id="tweet" name="tweet" cols="50" rows="5"></textarea>
 		  
@@ -18,6 +18,6 @@
 
 </div>
 	
-<a class="logout" href="<?php echo base_url(); ?>twitter/logout" title="Click here to log out">Log Out</a>
+<a class="logout" href="<?php echo base_url('twitter/logout'); ?>" title="Click here to log out">Log Out</a>
 
 <?php include('inc/footer.php'); ?>

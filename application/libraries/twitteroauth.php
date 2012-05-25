@@ -111,9 +111,10 @@ class TwitterOAuth {
    *                "user_id" => "9436992",
    *                "screen_name" => "abraham")
    */
-  function getAccessToken($oauth_verifier = FALSE) {
+  function getAccessToken($oauth_verifier = FALSE, $oauth_token = FALSE) {
     $parameters = array();
-    if (!empty($oauth_verifier)) {
+    if (!empty($oauth_verifier) && !empty($oauth_token)) {
+      $parameters['oauth_token'] = $oauth_token;
       $parameters['oauth_verifier'] = $oauth_verifier;
     }
     $request = $this->oAuthRequest($this->accessTokenURL(), 'GET', $parameters);
@@ -202,13 +203,13 @@ class TwitterOAuth {
     $ci = curl_init();
     /* Curl settings */
     curl_setopt($ci, CURLOPT_USERAGENT, $this->useragent);
+    curl_setopt($ci, CURLOPT_RETURNTRANSFER, TRUE);
+    curl_setopt($ci, CURLOPT_HEADER, FALSE);
     curl_setopt($ci, CURLOPT_CONNECTTIMEOUT, $this->connecttimeout);
     curl_setopt($ci, CURLOPT_TIMEOUT, $this->timeout);
-    curl_setopt($ci, CURLOPT_RETURNTRANSFER, TRUE);
     curl_setopt($ci, CURLOPT_HTTPHEADER, array('Expect:'));
     curl_setopt($ci, CURLOPT_SSL_VERIFYPEER, $this->ssl_verifypeer);
     curl_setopt($ci, CURLOPT_HEADERFUNCTION, array($this, 'getHeader'));
-    curl_setopt($ci, CURLOPT_HEADER, FALSE);
 
     switch ($method) {
       case 'POST':
@@ -222,6 +223,7 @@ class TwitterOAuth {
         if (!empty($postfields)) {
           $url = "{$url}?{$postfields}";
         }
+        break;
     }
 
     curl_setopt($ci, CURLOPT_URL, $url);

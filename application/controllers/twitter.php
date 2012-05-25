@@ -91,7 +91,7 @@ class Twitter extends CI_Controller {
 		}
 		else
 		{
-			$access_token = $this->connection->getAccessToken($this->input->get('oauth_verifier'));
+			$access_token = $this->connection->getAccessToken($this->input->get('oauth_verifier'), $this->input->get('oauth_token'));
 
 			if ($this->connection->http_code == 200)
 			{
@@ -129,6 +129,16 @@ class Twitter extends CI_Controller {
 		$this->session->unset_userdata('oauth_access_token_secret');
 		$this->session->unset_userdata('twitter_user_id');
 		$this->session->unset_userdata('twitter_screen_name');
+		redirect(base_url('/'));
+	}
+
+	public function publish()
+	{
+		$message = $this->input->get_post('tweet', TRUE);
+		$data = array(
+	    'status' => $message
+		);
+		$result = $this->connection->post('statuses/update', $data);
 		redirect(base_url('/'));
 	}
 	
