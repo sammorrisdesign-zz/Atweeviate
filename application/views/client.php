@@ -18,6 +18,6 @@
 
 </div>
 	
-<a class="logout" href="clearsessions.php" title="Click here to log out">Log Out</a>
+<a class="logout" href="<?php echo base_url(); ?>twitter/logout" title="Click here to log out">Log Out</a>
 
 <?php include('inc/footer.php'); ?>

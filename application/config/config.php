@@ -367,7 +367,7 @@ $config['proxy_ips'] = '';
 |
 */
 $config['oauth_consumer_key'] = 'wdXVYQ73qSUGdg2jiSDtA';
-$config['oauth_consumer_secret'] = 'S8FRnrDEIpld94EAYUKlHagwm4MEQZ9ICytpYVxv2se';
+$config['oauth_consumer_secret'] = 'S8FRnrDEIpld94EAYUKlHagwm4MEQZ9ICytpYVxv2s';
 $config['oauth_callback_url'] = 'http://atweeviate.com/twitter/callback';
 
 /* End of file config.php */
