@@ -85,8 +85,8 @@ class Twitter extends CI_Controller {
 	public function callback()
 	{
 
-		var_dump($this->input->get());
-		var_dump($this->session->userdata());
+		var_dump($this->input->get('oauth_token'));
+		var_dump($this->session->userdata('request_token'));
 
 		if($this->input->get('oauth_token') && $this->session->userdata('request_token') !== $this->input->get('oauth_token'))
 		{
