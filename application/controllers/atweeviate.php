@@ -17,6 +17,8 @@ class Atweeviate extends CI_Controller {
 		$response = json_decode($this->curl->simple_get($url));
 
 		$this->output->set_content_type('application/json')->set_output($response);
+
+		$this->load->('response');
 	}
 
 	/**
