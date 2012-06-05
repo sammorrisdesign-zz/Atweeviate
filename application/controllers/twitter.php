@@ -97,9 +97,7 @@ class Twitter extends CI_Controller {
 			if ($this->connection->http_code === 200)
 			{
 
-				echo '<pre>';
 				print_r($access_token);
-				echo '</pre>';
 
 				// $cookie_defaults = array(
 				// 	'expire' => '86500',
