@@ -8,6 +8,7 @@ class Twitter extends CI_Controller {
 	{
 		parent::__construct();
 
+		$this->load->library('session');
 		$this->load->library('twitteroauth');
 
 		//print_r($this->session->userdata());
@@ -15,7 +16,6 @@ class Twitter extends CI_Controller {
 		if($this->session->userdata('oauth_access_token') && $this->session->userdata('oauth_access_token_secret'))
 		{
 			// If user already logged in
-
 			$this->connection = $this->twitteroauth->create($this->config->item('oauth_consumer_key'), $this->config->item('oauth_consumer_secret'), $this->session->userdata('oauth_access_token'),  $this->session->userdata('oauth_access_token_secret'));
 		}
 		elseif($this->session->userdata('request_token') && $this->session->userdata('request_token_secret'))
