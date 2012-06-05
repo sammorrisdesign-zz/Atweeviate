@@ -117,12 +117,7 @@ class Twitter extends CI_Controller {
 
 	public function reset()
 	{
-		$this->session->unset_userdata('oauth_access_token');
-		$this->session->unset_userdata('oauth_access_token_secret');
-		$this->session->unset_userdata('request_token');
-		$this->session->unset_userdata('request_token_secret');
-		$this->session->unset_userdata('twitter_user_id');
-		$this->session->unset_userdata('twitter_screen_name');
+		$this->session->sess_destroy();
 	}
 
 	public function logout()
