@@ -1,7 +1,7 @@
 <?php include('inc/head.php'); ?>
 
 <pre>
-<?php print_r($this->session->all_userdata(); ?>
+<?php print_r($this->session->all_userdata()); ?>
 </pre>
 
 <div class="container">
