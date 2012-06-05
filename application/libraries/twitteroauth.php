@@ -111,10 +111,11 @@ class TwitterOAuth {
    *                "user_id" => "9436992",
    *                "screen_name" => "abraham")
    */
-  function getAccessToken($oauth_verifier = FALSE) {
+  function getAccessToken($oauth_verifier = FALSE, $oauth_token = FALSE) {
     $parameters = array();
-    if (!empty($oauth_verifier)) {
+    if (!empty($oauth_verifier) && !empty($oauth_token)) {
       $parameters['oauth_verifier'] = $oauth_verifier;
+      $parameters['oauth_token'] = $oauth_token;
     }
     $request = $this->oAuthRequest($this->accessTokenURL(), 'GET', $parameters);
     $token = OAuthUtil::parse_parameters($request);
