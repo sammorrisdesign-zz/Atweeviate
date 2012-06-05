@@ -113,7 +113,7 @@ class Twitter extends CI_Controller {
 		}
 	}
 
-	function reset()
+	public function reset()
 	{
 		$this->session->unset_userdata('oauth_access_token');
 		$this->session->unset_userdata('oauth_access_token_secret');
