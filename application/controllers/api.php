@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Atweeviate extends CI_Controller {
+class Api extends CI_Controller {
 
 	public $api_url = 'http://words.bighugelabs.com/api/2';
 	public $api_key = 'a606d540119f33c508a043ce724fe5f8';
