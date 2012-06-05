@@ -8,8 +8,6 @@ class Twitter extends CI_Controller {
 	{
 		parent::__construct();
 
-		session_start();
-
 		$this->load->library('twitteroauth');
 
 		error_log('INSTANTIATING!');

@@ -376,3 +376,67 @@ DEBUG - 2012-06-05 15:19:53 --> Controller Class Initialized
 DEBUG - 2012-06-05 15:19:53 --> File loaded: application/views/connect.php
 DEBUG - 2012-06-05 15:19:53 --> Final output sent to browser
 DEBUG - 2012-06-05 15:19:53 --> Total execution time: 0.0174
+DEBUG - 2012-06-05 17:19:08 --> Config Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> Hooks Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> Utf8 Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> UTF-8 Support Enabled
+DEBUG - 2012-06-05 17:19:08 --> URI Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> Router Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> No URI present. Default controller set.
+DEBUG - 2012-06-05 17:19:08 --> Output Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> Security Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> Input Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-06-05 17:19:08 --> Language Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> Loader Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> Helper loaded: url_helper
+DEBUG - 2012-06-05 17:19:08 --> Session Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> Helper loaded: string_helper
+DEBUG - 2012-06-05 17:19:08 --> A session cookie was not found.
+DEBUG - 2012-06-05 17:19:08 --> Session routines successfully run
+DEBUG - 2012-06-05 17:19:08 --> Controller Class Initialized
+DEBUG - 2012-06-05 17:19:08 --> File loaded: application/views/connect.php
+DEBUG - 2012-06-05 17:19:08 --> Final output sent to browser
+DEBUG - 2012-06-05 17:19:08 --> Total execution time: 0.0272
+DEBUG - 2012-06-05 17:19:55 --> Config Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> Hooks Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> Utf8 Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> UTF-8 Support Enabled
+DEBUG - 2012-06-05 17:19:55 --> URI Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> Router Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> No URI present. Default controller set.
+DEBUG - 2012-06-05 17:19:55 --> Output Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> Security Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> Input Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-06-05 17:19:55 --> Language Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> Loader Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> Helper loaded: url_helper
+DEBUG - 2012-06-05 17:19:55 --> Session Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> Helper loaded: string_helper
+DEBUG - 2012-06-05 17:19:55 --> Session routines successfully run
+DEBUG - 2012-06-05 17:19:55 --> Controller Class Initialized
+DEBUG - 2012-06-05 17:19:55 --> File loaded: application/views/connect.php
+DEBUG - 2012-06-05 17:19:55 --> Final output sent to browser
+DEBUG - 2012-06-05 17:19:55 --> Total execution time: 0.0182
+DEBUG - 2012-06-05 17:21:01 --> Config Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> Hooks Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> Utf8 Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> UTF-8 Support Enabled
+DEBUG - 2012-06-05 17:21:01 --> URI Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> Router Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> No URI present. Default controller set.
+DEBUG - 2012-06-05 17:21:01 --> Output Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> Security Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> Input Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-06-05 17:21:01 --> Language Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> Loader Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> Helper loaded: url_helper
+DEBUG - 2012-06-05 17:21:01 --> Session Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> Helper loaded: string_helper
+DEBUG - 2012-06-05 17:21:01 --> Session routines successfully run
+DEBUG - 2012-06-05 17:21:01 --> Controller Class Initialized
+DEBUG - 2012-06-05 17:21:01 --> File loaded: application/views/connect.php
+DEBUG - 2012-06-05 17:21:01 --> Final output sent to browser
+DEBUG - 2012-06-05 17:21:01 --> Total execution time: 0.0168
