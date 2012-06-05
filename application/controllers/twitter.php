@@ -86,7 +86,7 @@ class Twitter extends CI_Controller {
 	{
 		if($this->input->get('oauth_token') && $this->session->userdata('request_token') !== $this->input->get('oauth_token'))
 		{
-			$this->reset_session();
+			$this->reset();
 			redirect(base_url('/twitter/authenticate'));
 		}
 		else
