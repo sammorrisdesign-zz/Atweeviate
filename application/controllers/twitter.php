@@ -10,17 +10,15 @@ class Twitter extends CI_Controller {
 
 		$this->load->library('twitteroauth');
 
-		//print_r($this->db_session->userdata());
-
-		if($this->db_session->userdata('oauth_access_token') && $this->db_session->userdata('oauth_access_token_secret'))
+		if($this->session->userdata('oauth_access_token') && $this->session->userdata('oauth_access_token_secret'))
 		{
 			// If user already logged in
-			$this->connection = $this->twitteroauth->create($this->config->item('oauth_consumer_key'), $this->config->item('oauth_consumer_secret'), $this->db_session->userdata('oauth_access_token'),  $this->db_session->userdata('oauth_access_token_secret'));
+			$this->connection = $this->twitteroauth->create($this->config->item('oauth_consumer_key'), $this->config->item('oauth_consumer_secret'), $this->session->userdata('oauth_access_token'),  $this->session->userdata('oauth_access_token_secret'));
 		}
-		elseif($this->db_session->userdata('request_token') && $this->db_session->userdata('request_token_secret'))
+		elseif($this->session->userdata('request_token') && $this->session->userdata('request_token_secret'))
 		{
 			// If user in process of authentication
-			$this->connection = $this->twitteroauth->create($this->config->item('oauth_consumer_key'), $this->config->item('oauth_consumer_secret'), $this->db_session->userdata('oauth_access_token'), $this->db_session->userdata('oauth_access_token_secret'));
+			$this->connection = $this->twitteroauth->create($this->config->item('oauth_consumer_key'), $this->config->item('oauth_consumer_secret'), $this->session->userdata('oauth_access_token'), $this->session->userdata('oauth_access_token_secret'));
 		}
 		else
 		{
@@ -32,7 +30,7 @@ class Twitter extends CI_Controller {
 	public function index()
 	{
 
-		if($this->db_session->userdata('oauth_access_token') && $this->db_session->userdata('oauth_access_token_secret'))
+		if($this->session->userdata('oauth_access_token') && $this->session->userdata('oauth_access_token_secret'))
 		{
 			$this->load->view('client');
 		}
@@ -50,7 +48,7 @@ class Twitter extends CI_Controller {
 	 */
 	public function authenticate()
 	{
-		if($this->db_session->userdata('oauth_access_token') && $this->db_session->userdata('oauth_access_token_secret'))
+		if($this->session->userdata('oauth_access_token') && $this->session->userdata('oauth_access_token_secret'))
 		{
 			// User is already authenticated. Add your user notification code here.
 			redirect(base_url('/'));
@@ -61,10 +59,10 @@ class Twitter extends CI_Controller {
 			// Making a request for request_token
 			$request_token = $this->connection->getRequestToken($this->config->item('oauth_callback_url'));
 
-			$this->db_session->set_userdata('request_token', $request_token['oauth_token']);
-			$this->db_session->set_userdata('request_token_secret', $request_token['oauth_token_secret']);
+			$this->session->set_userdata('request_token', $request_token['oauth_token']);
+			$this->session->set_userdata('request_token_secret', $request_token['oauth_token_secret']);
 
-			error_log($this->db_session->userdata('request_token'));
+			error_log($this->session->userdata('request_token'));
 
 			if($this->connection->http_code === 200)
 			{
@@ -87,9 +85,9 @@ class Twitter extends CI_Controller {
 	public function callback()
 	{
 
-		var_dump($this->db_session->userdata('request_token'));
+		var_dump($this->session->userdata('request_token'));
 
-		// if($this->input->get('oauth_token') && $this->db_session->userdata('request_token') !== $this->input->get('oauth_token'))
+		// if($this->input->get('oauth_token') && $this->session->userdata('request_token') !== $this->input->get('oauth_token'))
 		// {
 		// 	$this->reset();
 		// 	redirect(base_url('/twitter/authenticate'));
@@ -100,13 +98,13 @@ class Twitter extends CI_Controller {
 
 		// 	if ($this->connection->http_code == 200)
 		// 	{
-		// 		$this->db_session->set_userdata('oauth_access_token', $access_token['oauth_token']);
-		// 		$this->db_session->set_userdata('oauth_access_token_secret', $access_token['oauth_token_secret']);
-		// 		$this->db_session->set_userdata('twitter_user_id', $access_token['user_id']);
-		// 		$this->db_session->set_userdata('twitter_screen_name', $access_token['screen_name']);
+		// 		$this->session->set_userdata('oauth_access_token', $access_token['oauth_token']);
+		// 		$this->session->set_userdata('oauth_access_token_secret', $access_token['oauth_token_secret']);
+		// 		$this->session->set_userdata('twitter_user_id', $access_token['user_id']);
+		// 		$this->session->set_userdata('twitter_screen_name', $access_token['screen_name']);
 
-		// 		$this->db_session->unset_userdata('request_token');
-		// 		$this->db_session->unset_userdata('request_token_secret');
+		// 		$this->session->unset_userdata('request_token');
+		// 		$this->session->unset_userdata('request_token_secret');
 
 		// 		redirect(base_url('/'));
 		// 	}
@@ -120,20 +118,20 @@ class Twitter extends CI_Controller {
 
 	public function reset()
 	{
-		$this->db_session->unset_userdata('oauth_access_token');
-		$this->db_session->unset_userdata('oauth_access_token_secret');
-		$this->db_session->unset_userdata('request_token');
-		$this->db_session->unset_userdata('request_token_secret');
-		$this->db_session->unset_userdata('twitter_user_id');
-		$this->db_session->unset_userdata('twitter_screen_name');
+		$this->session->unset_userdata('oauth_access_token');
+		$this->session->unset_userdata('oauth_access_token_secret');
+		$this->session->unset_userdata('request_token');
+		$this->session->unset_userdata('request_token_secret');
+		$this->session->unset_userdata('twitter_user_id');
+		$this->session->unset_userdata('twitter_screen_name');
 	}
 
 	public function logout()
 	{
-		$this->db_session->unset_userdata('oauth_access_token');
-		$this->db_session->unset_userdata('oauth_access_token_secret');
-		$this->db_session->unset_userdata('twitter_user_id');
-		$this->db_session->unset_userdata('twitter_screen_name');
+		$this->session->unset_userdata('oauth_access_token');
+		$this->session->unset_userdata('oauth_access_token_secret');
+		$this->session->unset_userdata('twitter_user_id');
+		$this->session->unset_userdata('twitter_screen_name');
 		redirect(base_url('/'));
 	}
 
