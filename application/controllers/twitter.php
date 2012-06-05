@@ -66,7 +66,7 @@ class Twitter extends CI_Controller {
 			$this->session->set_userdata('request_token', $request_token['oauth_token']);
 			$this->session->set_userdata('request_token_secret', $request_token['oauth_token_secret']);
 
-			var_dump($this->session->all_userdata());
+			error_log($this->session->userdata('request_token'));
 
 			if($this->connection->http_code === 200)
 			{
