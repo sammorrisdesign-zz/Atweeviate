@@ -88,33 +88,33 @@ class Twitter extends CI_Controller {
 		var_dump($this->input->get('oauth_token'));
 		var_dump($this->session->userdata('request_token'));
 
-		if($this->input->get('oauth_token') && $this->session->userdata('request_token') !== $this->input->get('oauth_token'))
-		{
-			$this->reset();
-			redirect(base_url('/twitter/authenticate'));
-		}
-		else
-		{
-			$access_token = $this->connection->getAccessToken($this->input->get('oauth_verifier'), $this->input->get('oauth_token'));
+		// if($this->input->get('oauth_token') && $this->session->userdata('request_token') !== $this->input->get('oauth_token'))
+		// {
+		// 	$this->reset();
+		// 	redirect(base_url('/twitter/authenticate'));
+		// }
+		// else
+		// {
+		// 	$access_token = $this->connection->getAccessToken($this->input->get('oauth_verifier'), $this->input->get('oauth_token'));
 
-			if ($this->connection->http_code == 200)
-			{
-				$this->session->set_userdata('oauth_access_token', $access_token['oauth_token']);
-				$this->session->set_userdata('oauth_access_token_secret', $access_token['oauth_token_secret']);
-				$this->session->set_userdata('twitter_user_id', $access_token['user_id']);
-				$this->session->set_userdata('twitter_screen_name', $access_token['screen_name']);
+		// 	if ($this->connection->http_code == 200)
+		// 	{
+		// 		$this->session->set_userdata('oauth_access_token', $access_token['oauth_token']);
+		// 		$this->session->set_userdata('oauth_access_token_secret', $access_token['oauth_token_secret']);
+		// 		$this->session->set_userdata('twitter_user_id', $access_token['user_id']);
+		// 		$this->session->set_userdata('twitter_screen_name', $access_token['screen_name']);
 
-				$this->session->unset_userdata('request_token');
-				$this->session->unset_userdata('request_token_secret');
+		// 		$this->session->unset_userdata('request_token');
+		// 		$this->session->unset_userdata('request_token_secret');
 
-				redirect(base_url('/'));
-			}
-			else
-			{
-				// An error occured. Add your notification code here.
-				redirect(base_url('/twitter/error'));
-			}
-		}
+		// 		redirect(base_url('/'));
+		// 	}
+		// 	else
+		// 	{
+		// 		// An error occured. Add your notification code here.
+		// 		redirect(base_url('/twitter/error'));
+		// 	}
+		// }
 	}
 
 	public function reset()
