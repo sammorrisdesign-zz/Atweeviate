@@ -27,7 +27,7 @@ class Atweeviate extends CI_Controller {
 	 */
 	public function getRequestUrl($word = '')
 	{
-		$url = sprintf('%s/%s/%s', $this->api_url, $this->api_key, $word);
+		$url = sprintf('%s/%s/%s/', $this->api_url, $this->api_key, $word);
 
 		return $url;
 	}
