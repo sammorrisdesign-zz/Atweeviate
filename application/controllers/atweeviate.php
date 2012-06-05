@@ -19,6 +19,8 @@ class Atweeviate extends CI_Controller {
 		echo '<pre>';
 		print_r($response);
 		echo '</pre>';
+
+		exit();
 	}
 
 	/**
