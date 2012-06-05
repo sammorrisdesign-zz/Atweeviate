@@ -9,20 +9,17 @@ class Atweeviate extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+	}
 
-		$word = $this->uri->segment(2, 0);
+	public function get()
+	{
+		$word = $this->uri->segment(3, 0);
 
 		$url = $this->getRequestUrl($word);
 
-		$response = json_decode($this->curl->simple_get($url));
+		$response = $this->curl->simple_get($url);
 
-		$data = array(
-			'response' => $response
-		);
-
-		$this->output->set_content_type('application/json');
-
-		$this->load->view('response', $data);
+		$this->output->set_content_type('application/json')->set_output($response);
 	}
 
 	/**
