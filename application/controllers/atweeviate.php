@@ -14,9 +14,11 @@ class Atweeviate extends CI_Controller {
 
 		$url = $this->getRequestUrl($word);
 
-		$response = $this->curl->simple_get($url);
+		$response = json_decode($this->curl->simple_get($url));
 
-		echo '<pre>'.json_decode($response).'</pre>';
+		echo '<pre>';
+		print_r($response);
+		echo '</pre>';
 	}
 
 	/**
