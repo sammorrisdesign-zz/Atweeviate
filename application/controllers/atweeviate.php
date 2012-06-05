@@ -11,7 +11,7 @@ class Atweeviate extends CI_Controller {
 
 		$word = $this->uri->segment(2, 0);
 
-		$this->curl->simple_get($this->getRequestUrl($word));
+		echo $this->curl->simple_get($this->getRequestUrl($word));
 	}
 
 	/**
