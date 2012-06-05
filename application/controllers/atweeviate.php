@@ -4,6 +4,7 @@ class Atweeviate extends CI_Controller {
 
 	public $api_url = 'http://words.bighugelabs.com/api/2';
 	public $api_key = 'a606d540119f33c508a043ce724fe5f8';
+	public $api_format = 'json';
 
 	public function __construct()
 	{
@@ -11,11 +12,7 @@ class Atweeviate extends CI_Controller {
 
 		$word = $this->uri->segment(2, 0);
 
-		echo $word;
-
 		$url = $this->getRequestUrl($word);
-
-		echo $url;
 
 		echo $this->curl->simple_get($url);
 	}
@@ -27,7 +24,7 @@ class Atweeviate extends CI_Controller {
 	 */
 	public function getRequestUrl($word = '')
 	{
-		$url = sprintf('%s/%s/%s/', $this->api_url, $this->api_key, $word);
+		$url = sprintf('%s/%s/%s/%s', $this->api_url, $this->api_key, $word, $api_format);
 
 		return $url;
 	}
