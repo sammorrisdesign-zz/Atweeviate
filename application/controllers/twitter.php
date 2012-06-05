@@ -104,7 +104,7 @@ class Twitter extends CI_Controller {
 						'oauth_access_token' => $access_token['oauth_token'],
 						'oauth_access_token_secret' => $access_token['oauth_token_secret'],
 						'twitter_user_id' => $access_token['user_id'],
-						'twitter_screen_name', $access_token['screen_name'],
+						'twitter_screen_name' => $access_token['screen_name'],
 						'name' => $account->name,
 						'avatar' => $account->profile_image_url
 					)
