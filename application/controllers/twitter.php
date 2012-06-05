@@ -15,7 +15,6 @@ class Twitter extends CI_Controller {
 		if($this->session->userdata('oauth_access_token') && $this->session->userdata('oauth_access_token_secret'))
 		{
 			// If user already logged in
-
 			$this->connection = $this->twitteroauth->create($this->config->item('oauth_consumer_key'), $this->config->item('oauth_consumer_secret'), $this->session->userdata('oauth_access_token'),  $this->session->userdata('oauth_access_token_secret'));
 		}
 		elseif($this->session->userdata('request_token') && $this->session->userdata('request_token_secret'))
@@ -32,6 +31,8 @@ class Twitter extends CI_Controller {
 
 	public function index()
 	{
+
+		// mmm cookies.
 
 		if($this->session->userdata('oauth_access_token') && $this->session->userdata('oauth_access_token_secret'))
 		{
@@ -93,23 +94,55 @@ class Twitter extends CI_Controller {
 		{
 			$access_token = $this->connection->getAccessToken($this->input->get('oauth_verifier'), $this->input->get('oauth_token'));
 
-			if ($this->connection->http_code == 200)
-			{
-				$this->session->set_userdata('oauth_access_token', $access_token['oauth_token']);
-				$this->session->set_userdata('oauth_access_token_secret', $access_token['oauth_token_secret']);
-				$this->session->set_userdata('twitter_user_id', $access_token['user_id']);
-				$this->session->set_userdata('twitter_screen_name', $access_token['screen_name']);
+			echo '<pre>';
+			print_r($access_token);
+			echo '</pre>';
 
-				$this->session->unset_userdata('request_token');
-				$this->session->unset_userdata('request_token_secret');
+			// if ($this->connection->http_code === 200)
+			// {
 
-				redirect(base_url('/'));
-			}
-			else
-			{
-				// An error occured. Add your notification code here.
-				redirect(base_url('/'));
-			}
+			// 	$cookie_defaults = array(
+			// 		'expire' => '86500',
+			//     'domain' => site_url(),
+			//     'path'   => '/',
+			//     'secure' => TRUE
+			// 	);
+
+			// 	$cookies = array(
+			// 		array(
+			// 	    'name'   => 'oauth_access_token',
+			// 	    'value'  => $access_token['oauth_token']
+			// 		),
+			// 		array(
+			// 	    'name'   => 'oauth_access_token_secret',
+			// 	    'value'  => $access_token['oauth_token_secret']
+			// 		),
+			// 		array(
+			// 	    'name'   => 'twitter_user_id',
+			// 	    'value'  => $access_token['user_id']
+			// 		),
+			// 		array(
+			// 	    'name'   => 'twitter_screen_name',
+			// 	    'value'  => $access_token['screen_name']
+			// 		)
+			// 	);
+
+			// 	foreach($cookies as $cookie)
+			// 	{
+			// 		$this = array_merge($cookie, $cookie_defaults);
+			// 		$this->input->set_cookie($this);
+			// 	}
+
+			// 	$this->session->unset_userdata('request_token');
+			// 	$this->session->unset_userdata('request_token_secret');
+
+			// 	redirect(base_url('/'));
+			// }
+			// else
+			// {
+			// 	// An error occured. Add your notification code here.
+			// 	redirect(base_url('/'));
+			// }
 		}
 	}
 
