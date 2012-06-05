@@ -86,8 +86,6 @@ class Twitter extends CI_Controller {
 	 */
 	public function callback()
 	{
-		error_log($this->session->userdata('request_token'));
-
 		if($this->input->get('oauth_token') && $this->session->userdata('request_token') !== $this->input->get('oauth_token'))
 		{
 			$this->reset();
@@ -99,10 +97,18 @@ class Twitter extends CI_Controller {
 
 			if ($this->connection->http_code === 200)
 			{
-				$this->session->set_userdata('oauth_access_token', $access_token['oauth_token']);
-				$this->session->set_userdata('oauth_access_token_secret', $access_token['oauth_token_secret']);
-				$this->session->set_userdata('twitter_user_id', $access_token['user_id']);
-				$this->session->set_userdata('twitter_screen_name', $access_token['screen_name']);
+				$account = $connection->get('account/verify_credentials');
+
+				$this->session->set_userdata(
+					array(
+						'oauth_access_token' => $access_token['oauth_token'],
+						'oauth_access_token_secret' => $access_token['oauth_token_secret'],
+						'twitter_user_id' => $access_token['user_id'],
+						'twitter_screen_name', $access_token['screen_name'],
+						'name' => $account->name,
+						'avatar' => $account->profile_image_url
+					)
+				);
 
 				$this->session->unset_userdata('request_token');
 				$this->session->unset_userdata('request_token_secret');
@@ -124,10 +130,7 @@ class Twitter extends CI_Controller {
 
 	public function logout()
 	{
-		$this->session->unset_userdata('oauth_access_token');
-		$this->session->unset_userdata('oauth_access_token_secret');
-		$this->session->unset_userdata('twitter_user_id');
-		$this->session->unset_userdata('twitter_screen_name');
+		$this->reset();
 		redirect(base_url('/'));
 	}
 
