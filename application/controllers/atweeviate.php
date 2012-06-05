@@ -8,13 +8,10 @@ class Atweeviate extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
-	}
 
-	public function word()
-	{
 		$word = $this->uri->segment(2, 0);
 
-		echo $this->getRequestUrl($word);
+		$this->curl->simple_get($this->getRequestUrl($word));
 	}
 
 	/**
