@@ -10,8 +10,6 @@ class Twitter extends CI_Controller {
 
 		$this->load->library('twitteroauth');
 
-		error_log('INSTANTIATING!');
-
 		if($this->session->userdata('oauth_access_token') && $this->session->userdata('oauth_access_token_secret'))
 		{
 			// If user already logged in
@@ -68,11 +66,8 @@ class Twitter extends CI_Controller {
 				)
 			);
 
-			error_log($this->session->userdata('request_token'));
-
 			if($this->connection->http_code === 200)
 			{
-				error_log('REDIRECTING');
 				$url = $this->connection->getAuthorizeURL($request_token);
 				redirect($url);
 			}
@@ -91,37 +86,33 @@ class Twitter extends CI_Controller {
 	 */
 	public function callback()
 	{
+		if($this->input->get('oauth_token') && $this->session->userdata('request_token') !== $this->input->get('oauth_token'))
+		{
+			$this->reset();
+			redirect(base_url('/twitter/authenticate'));
+		}
+		else
+		{
+			$access_token = $this->connection->getAccessToken($this->input->get('oauth_verifier'), $this->input->get('oauth_token'));
 
-		error_log('CALLBACK');
-		error_log($this->session->userdata('request_token'));
+			if ($this->connection->http_code == 200)
+			{
+				$this->session->set_userdata('oauth_access_token', $access_token['oauth_token']);
+				$this->session->set_userdata('oauth_access_token_secret', $access_token['oauth_token_secret']);
+				$this->session->set_userdata('twitter_user_id', $access_token['user_id']);
+				$this->session->set_userdata('twitter_screen_name', $access_token['screen_name']);
 
-		// if($this->input->get('oauth_token') && $this->session->userdata('request_token') !== $this->input->get('oauth_token'))
-		// {
-		// 	$this->reset();
-		// 	redirect(base_url('/twitter/authenticate'));
-		// }
-		// else
-		// {
-		// 	$access_token = $this->connection->getAccessToken($this->input->get('oauth_verifier'), $this->input->get('oauth_token'));
+				$this->session->unset_userdata('request_token');
+				$this->session->unset_userdata('request_token_secret');
 
-		// 	if ($this->connection->http_code == 200)
-		// 	{
-		// 		$this->session->set_userdata('oauth_access_token', $access_token['oauth_token']);
-		// 		$this->session->set_userdata('oauth_access_token_secret', $access_token['oauth_token_secret']);
-		// 		$this->session->set_userdata('twitter_user_id', $access_token['user_id']);
-		// 		$this->session->set_userdata('twitter_screen_name', $access_token['screen_name']);
-
-		// 		$this->session->unset_userdata('request_token');
-		// 		$this->session->unset_userdata('request_token_secret');
-
-		// 		redirect(base_url('/'));
-		// 	}
-		// 	else
-		// 	{
-		// 		// An error occured. Add your notification code here.
-		// 		redirect(base_url('/twitter/error'));
-		// 	}
-		// }
+				redirect(base_url('/'));
+			}
+			else
+			{
+				// An error occured. Add your notification code here.
+				redirect(base_url('/twitter/error'));
+			}
+		}
 	}
 
 	public function reset()
