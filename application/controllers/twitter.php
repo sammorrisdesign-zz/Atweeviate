@@ -61,23 +61,19 @@ class Twitter extends CI_Controller {
 			// Making a request for request_token
 			$request_token = $this->connection->getRequestToken($this->config->item('oauth_callback_url'));
 
-			echo 'setting user data';
-
 			$this->session->set_userdata('request_token', $request_token['oauth_token']);
 			$this->session->set_userdata('request_token_secret', $request_token['oauth_token_secret']);
 
-			var_dump($this->session->all_userdata());
-
-			// if($this->connection->http_code === 200)
-			// {
-			// 	$url = $this->connection->getAuthorizeURL($request_token);
-			// 	redirect($url);
-			// }
-			// else
-			// {
-			// 	// An error occured. Make sure to put your error notification code here.
-			// 	redirect(base_url('/twitter/error'));
-			// }
+			if($this->connection->http_code === 200)
+			{
+				$url = $this->connection->getAuthorizeURL($request_token);
+				redirect($url);
+			}
+			else
+			{
+				// An error occured. Make sure to put your error notification code here.
+				redirect(base_url('/twitter/error'));
+			}
 		}
 	}
 
