@@ -8,7 +8,6 @@ class Twitter extends CI_Controller {
 	{
 		parent::__construct();
 
-		$this->load->library('session');
 		$this->load->library('twitteroauth');
 
 		//print_r($this->session->userdata());
@@ -58,13 +57,17 @@ class Twitter extends CI_Controller {
 		}
 		else
 		{
+
 			// Making a request for request_token
 			$request_token = $this->connection->getRequestToken($this->config->item('oauth_callback_url'));
+
+			echo 'setting user data';
+			var_dump($request_token);
 
 			$this->session->set_userdata('request_token', $request_token['oauth_token']);
 			$this->session->set_userdata('request_token_secret', $request_token['oauth_token_secret']);
 
-			if($this->connection->http_code == 200)
+			if($this->connection->http_code === 200)
 			{
 				$url = $this->connection->getAuthorizeURL($request_token);
 				redirect($url);
