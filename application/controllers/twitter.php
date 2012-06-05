@@ -108,7 +108,7 @@ class Twitter extends CI_Controller {
 			else
 			{
 				// An error occured. Add your notification code here.
-				redirect(base_url('/'));
+				redirect(base_url('/twitter/error'));
 			}
 		}
 	}
