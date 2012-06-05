@@ -440,3 +440,57 @@ DEBUG - 2012-06-05 17:21:01 --> Controller Class Initialized
 DEBUG - 2012-06-05 17:21:01 --> File loaded: application/views/connect.php
 DEBUG - 2012-06-05 17:21:01 --> Final output sent to browser
 DEBUG - 2012-06-05 17:21:01 --> Total execution time: 0.0168
+DEBUG - 2012-06-05 17:43:33 --> Config Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> Hooks Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> Utf8 Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> UTF-8 Support Enabled
+DEBUG - 2012-06-05 17:43:33 --> URI Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> Router Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> No URI present. Default controller set.
+DEBUG - 2012-06-05 17:43:33 --> Output Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> Security Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> Input Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-06-05 17:43:33 --> Language Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> Loader Class Initialized
+DEBUG - 2012-06-05 17:43:33 --> Helper loaded: url_helper
+DEBUG - 2012-06-05 17:43:33 --> Database Driver Class Initialized
+ERROR - 2012-06-05 17:43:33 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'atweeviate'@'localhost' (using password: YES) /Users/saulhardman/Documents/Websites/Atweeviate/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2012-06-05 17:43:33 --> Unable to connect to the database
+DEBUG - 2012-06-05 17:43:33 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2012-06-05 17:49:03 --> Config Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> Hooks Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> Utf8 Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> UTF-8 Support Enabled
+DEBUG - 2012-06-05 17:49:03 --> URI Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> Router Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> No URI present. Default controller set.
+DEBUG - 2012-06-05 17:49:03 --> Output Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> Security Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> Input Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-06-05 17:49:03 --> Language Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> Loader Class Initialized
+DEBUG - 2012-06-05 17:49:03 --> Helper loaded: url_helper
+DEBUG - 2012-06-05 17:49:03 --> Database Driver Class Initialized
+ERROR - 2012-06-05 17:49:03 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'atweeviate'@'localhost' (using password: YES) /Users/saulhardman/Documents/Websites/Atweeviate/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2012-06-05 17:49:03 --> Unable to connect to the database
+DEBUG - 2012-06-05 17:49:03 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2012-06-05 17:49:04 --> Config Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> Hooks Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> Utf8 Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> UTF-8 Support Enabled
+DEBUG - 2012-06-05 17:49:04 --> URI Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> Router Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> No URI present. Default controller set.
+DEBUG - 2012-06-05 17:49:04 --> Output Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> Security Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> Input Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-06-05 17:49:04 --> Language Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> Loader Class Initialized
+DEBUG - 2012-06-05 17:49:04 --> Helper loaded: url_helper
+DEBUG - 2012-06-05 17:49:04 --> Database Driver Class Initialized
+ERROR - 2012-06-05 17:49:04 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'atweeviate'@'localhost' (using password: YES) /Users/saulhardman/Documents/Websites/Atweeviate/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2012-06-05 17:49:04 --> Unable to connect to the database
+DEBUG - 2012-06-05 17:49:04 --> Language file loaded: language/english/db_lang.php

@@ -26,7 +26,7 @@ $config['base_url']	= 'http://atweeviate.com/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = '';
+$config['index_page'] = 'index.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -155,7 +155,7 @@ $config['permitted_uri_chars'] = 'a-z 0-9~%.:_\-';
 |
 */
 $config['allow_get_array']		= TRUE;
-$config['enable_query_strings'] = TRUE;
+$config['enable_query_strings'] = FALSE;
 $config['controller_trigger']	= 'c';
 $config['function_trigger']		= 'm';
 $config['directory_trigger']	= 'd'; // experimental not currently in use
@@ -180,7 +180,7 @@ $config['directory_trigger']	= 'd'; // experimental not currently in use
 | your log files will fill up very fast.
 |
 */
-$config['log_threshold'] = 4;
+$config['log_threshold'] = 0;
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '5@>Cs93jF(`/mep5Dq2dN3InCrXh2J!D';
+$config['encryption_key'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -369,6 +369,7 @@ $config['proxy_ips'] = '';
 $config['oauth_consumer_key'] = 'wdXVYQ73qSUGdg2jiSDtA';
 $config['oauth_consumer_secret'] = 'S8FRnrDEIpld94EAYUKlHagwm4MEQZ9ICytpYVxv2s';
 $config['oauth_callback_url'] = 'http://atweeviate.com/twitter/callback';
+
 
 /* End of file config.php */
 /* Location: ./application/config/config.php */
