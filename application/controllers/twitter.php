@@ -10,6 +10,8 @@ class Twitter extends CI_Controller {
 
 		$this->load->library('twitteroauth');
 
+		error_log('INSTANTIATING!');
+
 		if($this->session->userdata('oauth_access_token') && $this->session->userdata('oauth_access_token_secret'))
 		{
 			// If user already logged in
