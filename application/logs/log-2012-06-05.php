@@ -494,3 +494,21 @@ DEBUG - 2012-06-05 17:49:04 --> Database Driver Class Initialized
 ERROR - 2012-06-05 17:49:04 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'atweeviate'@'localhost' (using password: YES) /Users/saulhardman/Documents/Websites/Atweeviate/system/database/drivers/mysql/mysql_driver.php 91
 ERROR - 2012-06-05 17:49:04 --> Unable to connect to the database
 DEBUG - 2012-06-05 17:49:04 --> Language file loaded: language/english/db_lang.php
+DEBUG - 2012-06-05 19:13:24 --> Config Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> Hooks Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> Utf8 Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> UTF-8 Support Enabled
+DEBUG - 2012-06-05 19:13:24 --> URI Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> Router Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> No URI present. Default controller set.
+DEBUG - 2012-06-05 19:13:24 --> Output Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> Security Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> Input Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> Global POST and COOKIE data sanitized
+DEBUG - 2012-06-05 19:13:24 --> Language Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> Loader Class Initialized
+DEBUG - 2012-06-05 19:13:24 --> Helper loaded: url_helper
+DEBUG - 2012-06-05 19:13:24 --> Database Driver Class Initialized
+ERROR - 2012-06-05 19:13:24 --> Severity: Warning  --> mysql_pconnect() [<a href='function.mysql-pconnect'>function.mysql-pconnect</a>]: Access denied for user 'atweeviate'@'localhost' (using password: YES) /Users/saulhardman/Documents/Websites/Atweeviate/system/database/drivers/mysql/mysql_driver.php 91
+ERROR - 2012-06-05 19:13:24 --> Unable to connect to the database
+DEBUG - 2012-06-05 19:13:24 --> Language file loaded: language/english/db_lang.php
