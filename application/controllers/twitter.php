@@ -97,7 +97,7 @@ class Twitter extends CI_Controller {
 
 			if ($this->connection->http_code === 200)
 			{
-				$account = $connection->get('account/verify_credentials');
+				$account = $this->connection->get('account/verify_credentials');
 
 				$this->session->set_userdata(
 					array(
