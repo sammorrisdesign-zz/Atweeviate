@@ -94,55 +94,55 @@ class Twitter extends CI_Controller {
 		{
 			$access_token = $this->connection->getAccessToken($this->input->get('oauth_verifier'), $this->input->get('oauth_token'));
 
-			echo '<pre>';
-			print_r($access_token);
-			echo '</pre>';
+			if ($this->connection->http_code === 200)
+			{
 
-			// if ($this->connection->http_code === 200)
-			// {
+				echo '<pre>';
+				print_r($access_token);
+				echo '</pre>';
 
-			// 	$cookie_defaults = array(
-			// 		'expire' => '86500',
-			//     'domain' => site_url(),
-			//     'path'   => '/',
-			//     'secure' => TRUE
-			// 	);
+				// $cookie_defaults = array(
+				// 	'expire' => '86500',
+				//   'domain' => $config['cookie_domain'],
+				//   'path'   => $config['cookie_path'],
+				//   'secure' => $config['cookie_secure']
+				// );
 
-			// 	$cookies = array(
-			// 		array(
-			// 	    'name'   => 'oauth_access_token',
-			// 	    'value'  => $access_token['oauth_token']
-			// 		),
-			// 		array(
-			// 	    'name'   => 'oauth_access_token_secret',
-			// 	    'value'  => $access_token['oauth_token_secret']
-			// 		),
-			// 		array(
-			// 	    'name'   => 'twitter_user_id',
-			// 	    'value'  => $access_token['user_id']
-			// 		),
-			// 		array(
-			// 	    'name'   => 'twitter_screen_name',
-			// 	    'value'  => $access_token['screen_name']
-			// 		)
-			// 	);
+				// $cookies = array(
+				// 	array(
+				//     'name'   => 'oauth_access_token',
+				//     'value'  => $access_token['oauth_token']
+				// 	),
+				// 	array(
+				//     'name'   => 'oauth_access_token_secret',
+				//     'value'  => $access_token['oauth_token_secret']
+				// 	),
+				// 	array(
+				//     'name'   => 'twitter_user_id',
+				//     'value'  => $access_token['user_id']
+				// 	),
+				// 	array(
+				//     'name'   => 'twitter_screen_name',
+				//     'value'  => $access_token['screen_name']
+				// 	)
+				// );
 
-			// 	foreach($cookies as $cookie)
-			// 	{
-			// 		$this = array_merge($cookie, $cookie_defaults);
-			// 		$this->input->set_cookie($this);
-			// 	}
+				// foreach($cookies as $cookie)
+				// {
+				// 	$this = array_merge($cookie, $cookie_defaults);
+				// 	$this->input->set_cookie($this);
+				// }
 
-			// 	$this->session->unset_userdata('request_token');
-			// 	$this->session->unset_userdata('request_token_secret');
+				// $this->session->unset_userdata('request_token');
+				// $this->session->unset_userdata('request_token_secret');
 
-			// 	redirect(base_url('/'));
-			// }
-			// else
-			// {
-			// 	// An error occured. Add your notification code here.
-			// 	redirect(base_url('/'));
-			// }
+				// redirect(base_url('/'));
+			}
+			else
+			{
+				// An error occured. Add your notification code here.
+				redirect(base_url('/'));
+			}
 		}
 	}
 
