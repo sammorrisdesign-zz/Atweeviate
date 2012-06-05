@@ -32,7 +32,13 @@ class Twitter extends CI_Controller {
 
 		if($this->session->userdata('oauth_access_token') && $this->session->userdata('oauth_access_token_secret'))
 		{
-			$this->load->view('client');
+			$data = array(
+				'username' => $this->session->userdata('twitter_screen_name'),
+				'name' => $this->session->userdata('name'),
+				'avatar' => $this->session->userdata('avatar')
+			);
+
+			$this->load->view('client', $data);
 		}
 		else
 		{

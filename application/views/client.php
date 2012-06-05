@@ -1,12 +1,19 @@
-<?php include('inc/head.php'); ?>
-
-<pre>
-<?php print_r($this->session->all_userdata()); ?>
-</pre>
+<?php include('inc/header.php'); ?>
 
 <div class="container">
 	
-	<?php include('inc/header.php'); ?>
+	<header class="header">
+
+		<hgroup>
+		
+			<h1 class="banner" role="banner">Atweeviate</h1>
+			<h2 class="description">Tweet Better</h2>
+		
+		</hgroup>
+
+		<img src="<?php echo $avatar; ?>" alt="Twitter Profile Image" class="avatar">
+
+	</header>
 	
 	<div id="main" role="main">
 	
