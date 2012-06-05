@@ -17,7 +17,7 @@ class Atweeviate extends CI_Controller {
 
 		echo $url;
 
-		echo $this->curl->simple_get();
+		echo $this->curl->simple_get($url);
 	}
 
 	/**
