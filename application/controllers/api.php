@@ -17,13 +17,15 @@ class Api extends CI_Controller {
 
 		array_splice($words, 0, 2);
 
-		$response = '';
+		$responses = array();
 
 		foreach ($words as $word) {
 			$url = $this->getRequestUrl($word);
 
-			$response .= $this->curl->simple_get($url);
+			$responses[] = '{"' . $word . '":' . $this->curl->simple_get($url) . '}';
 		}
+
+		$responses = '[' . implode(',', $responses) . ']';
 
 		$this->output->set_content_type('application/json')->set_output($response);
 	}
