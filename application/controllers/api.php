@@ -25,7 +25,7 @@ class Api extends CI_Controller {
 			$responses[] = '{"' . $word . '":' . $this->curl->simple_get($url) . '}';
 		}
 
-		$responses = '[' . implode(',', $responses) . ']';
+		$response = '[' . implode(',', $responses) . ']';
 
 		$this->output->set_content_type('application/json')->set_output($response);
 	}
