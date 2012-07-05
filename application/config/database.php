@@ -50,7 +50,7 @@ $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
 $db['default']['username'] = 'atweeviate';
-$db['default']['password'] = 'password';
+$db['default']['password'] = 'tweetbetter';
 $db['default']['database'] = 'atweeviate';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
