@@ -13,11 +13,15 @@ class Api extends CI_Controller {
 
 	public function get()
 	{
-		$word = $this->uri->segment(3, 0);
+		$words = $this->uri->segment(3, 0);
 
-		$url = $this->getRequestUrl($word);
+		$response = '';
 
-		$response = $this->curl->simple_get($url);
+		foreach (explode(',', $words) as $word) {
+			$url = $this->getRequestUrl($word);
+
+			$response .= $this->curl->simple_get($url);
+		}
 
 		$this->output->set_content_type('application/json')->set_output($response);
 	}
